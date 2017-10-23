@@ -129,9 +129,7 @@ volatile bool fRequestShutdown = false;
 
 void StartShutdown()
 {
-    LogPrintf("StartShutdown requested\n");
     fRequestShutdown = true;
-    LogPrintf("fRequestShutdown = %s\n", fRequestShutdown ? "true" : "false");
 }
 bool ShutdownRequested()
 {
